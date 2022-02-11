@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+<head th:replace="plantilla :: head">
+    <meta charset="UTF-8"/>
+    <title>Datos de la persona</title>
+</head>
+<body>
+    <header th:replace="plantilla :: header"></header>
+
+    <section th:replace="editarCliente :: editarCliente"></section>
+
+    <footer th:replace="plantilla :: footer"></footer>
+
+    <h1>[[#{persona.formulario}]]</h1>
+    <a th:href="@{/}">[[#{accion.regresar}]]</a>
+    <br/>
+
+
+
+</body>
+</html>
